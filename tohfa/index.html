@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tohfa Studio – Custom Handmade Gifts</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top"><div class="wrap">
+<nav class="nav">
+<a class="logo" href="#top">Tohfa Studio<small lang="gu">ભેટ</small></a>
+<div class="links"><a href="#gifts">Gifts</a><a href="#how">How it works</a><a href="#reviews">Reviews</a></div>
+<a class="btn btn-p" href="#top">Personalize a gift</a>
+</nav>
+<header class="hero" id="top">
+<div>
+<h1 class="h1">Handmade gifts with their name on them.</h1>
+<p class="lead">Pick the occasion and the gift, add a name and a message, and watch your tag take shape. We make it by hand and ship it.</p>
+<form class="pz" id="pz" onsubmit="return false">
+<fieldset><legend>Occasion</legend><div class="opts">
+<label class="opt"><input type="radio" name="occ" value="Happy Birthday" checked><span>Birthday</span></label>
+<label class="opt"><input type="radio" name="occ" value="Happy Anniversary"><span>Anniversary</span></label>
+</div></fieldset>
+<div class="two">
+<div><label class="t" for="gift">Gift</label><select id="gift"><option>Photo frame</option><option>Name candle</option><option>Memory jar</option><option>Embroidered hoop</option><option>Hand-painted mug</option><option>Scrapbook album</option></select></div>
+<div><label class="t" for="nm">Name</label><input type="text" id="nm" maxlength="20" value="Riya" autocomplete="off"></div>
+</div>
+<div><label class="t" for="ms">Message (up to 60 characters)</label><textarea id="ms" maxlength="60">Thank you for every little moment.</textarea></div>
+<fieldset><legend>Tag colour</legend><div class="opts">
+<label class="opt sw"><input type="radio" name="col" value="#E4D7F5" checked aria-label="Lilac"><span style="--c:#E4D7F5"></span></label>
+<label class="opt sw"><input type="radio" name="col" value="#FFD3BF" aria-label="Peach"><span style="--c:#FFD3BF"></span></label>
+<label class="opt sw"><input type="radio" name="col" value="#C9EEDC" aria-label="Mint"><span style="--c:#C9EEDC"></span></label>
+<label class="opt sw"><input type="radio" name="col" value="#FFE08A" aria-label="Marigold"><span style="--c:#FFE08A"></span></label>
+<label class="opt sw"><input type="radio" name="col" value="#CDE4FA" aria-label="Sky"><span style="--c:#CDE4FA"></span></label>
+</div></fieldset>
+<button class="btn btn-p" type="submit" id="send">Request this gift</button>
+<p id="status" role="status"></p>
+</form>
+</div>
+<div class="stage">
+<div class="tag" id="tag" aria-live="polite">
+<small id="p-occ">Happy Birthday</small>
+<div class="nm" id="p-nm">Riya</div>
+<p class="ms" id="p-ms">Thank you for every little moment.</p>
+<span class="it" id="p-it">Photo frame</span>
+</div>
+</div>
+</header>
+</div></div>
+
+<section class="sec" id="gifts"><div class="wrap">
+<h2 class="h2">Gifts we make by hand</h2>
+<p class="lead">Choose one to start personalizing it above.</p>
+<div class="grid3">
+<article class="gift"><div class="ph" style="background:#E4D7F5">[PHOTO FRAME PHOTO]</div><h3>Photo frame</h3><p>[Wooden frame with painted border and a name plate.]</p><div class="tg"><span>Birthday</span><span>Anniversary</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Photo frame">Personalize</a></div></article>
+<article class="gift"><div class="ph" style="background:#FFE08A">[CANDLE PHOTO]</div><h3>Name candle</h3><p>[Hand-poured candle with a printed name label.]</p><div class="tg"><span>Birthday</span><span>Anniversary</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Name candle">Personalize</a></div></article>
+<article class="gift"><div class="ph" style="background:#C9EEDC">[MEMORY JAR PHOTO]</div><h3>Memory jar</h3><p>[Jar filled with handwritten notes and small keepsakes.]</p><div class="tg"><span>Anniversary</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Memory jar">Personalize</a></div></article>
+<article class="gift"><div class="ph" style="background:#FFD3BF">[EMBROIDERY PHOTO]</div><h3>Embroidered hoop</h3><p>[Hand-embroidered names and dates on fabric.]</p><div class="tg"><span>Anniversary</span><span>Birthday</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Embroidered hoop">Personalize</a></div></article>
+<article class="gift"><div class="ph" style="background:#CDE4FA">[MUG PHOTO]</div><h3>Hand-painted mug</h3><p>[Ceramic mug painted with a name and a small design.]</p><div class="tg"><span>Birthday</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Hand-painted mug">Personalize</a></div></article>
+<article class="gift"><div class="ph" style="background:#F6C5DA">[SCRAPBOOK PHOTO]</div><h3>Scrapbook album</h3><p>[Handbound album with space for photos and notes.]</p><div class="tg"><span>Anniversary</span><span>Birthday</span></div><div class="pr"><strong>From [YOUR PRICE]</strong><a class="btn btn-o" href="#top" data-gift="Scrapbook album">Personalize</a></div></article>
+</div></div></section>
+
+<section class="sec band" id="how"><div class="wrap">
+<h2 class="h2">From idea to doorstep</h2>
+<div class="steps">
+<div><div class="num">1</div><h3>Design your tag</h3><p>Pick the gift, name, message and colour.</p></div>
+<div><div class="num">2</div><h3>We make it by hand</h3><p>Your gift is crafted after you order, never from a shelf.</p></div>
+<div><div class="num">3</div><h3>Gift-wrapped and sent</h3><p>It arrives wrapped, with your tag attached.</p></div>
+</div></div></section>
+
+<section class="sec" id="reviews"><div class="wrap">
+<h2 class="h2">What people say</h2>
+<div class="grid3">
+<figure class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>[REVIEW about a birthday gift that felt personal.]</blockquote><figcaption class="who"><b>[Name]</b>[Birthday gift, City]</figcaption></figure>
+<figure class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>[REVIEW about an anniversary memory jar.]</blockquote><figcaption class="who"><b>[Name]</b>[Anniversary gift, City]</figcaption></figure>
+<figure class="rev"><div class="stars" aria-label="4 out of 5 stars">★★★★☆</div><blockquote>[REVIEW about packaging and delivery time.]</blockquote><figcaption class="who"><b>[Name]</b>[Gift for a friend, City]</figcaption></figure>
+</div></div></section>
+
+<section class="wrap sec" style="padding-top:0">
+<div class="cta"><h2 class="h2">Make their day feel handmade</h2><p>Start with a name and a message. We take care of the rest.</p><a class="btn" href="#top">Personalize a gift</a></div>
+<footer class="foot"><span class="logo" style="font-size:20px">Tohfa Studio</span><span>© Tohfa Studio. Custom handmade gifts.</span></footer>
+</section>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  var occ=document.querySelectorAll('input[name=occ]'),col=document.querySelectorAll('input[name=col]');
+  function val(list){for(var i=0;i<list.length;i++){if(list[i].checked)return list[i].value;}return '';}
+  function update(){
+    $('p-occ').textContent=val(occ);
+    $('p-nm').textContent=$('nm').value.trim()||'Their name';
+    $('p-ms').textContent=$('ms').value.trim()||'Your message here';
+    $('p-it').textContent=$('gift').value;
+    $('tag').style.setProperty('--c',val(col));
+    $('status').textContent='';
+  }
+  document.getElementById('pz').addEventListener('input',update);
+  document.getElementById('pz').addEventListener('change',update);
+  $('send').addEventListener('click',function(){
+    $('status').textContent='Request noted: '+$('gift').value+' for '+($('nm').value.trim()||'your recipient')+'. Connect this button to your order form.';
+  });
+  var btns=document.querySelectorAll('[data-gift]');
+  for(var i=0;i<btns.length;i++){btns[i].addEventListener('click',function(){$('gift').value=this.getAttribute('data-gift');update();});}
+  update();
+})();
+</script>
+</body>
+</html>
